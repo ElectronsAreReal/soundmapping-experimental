@@ -1,3 +1,5 @@
+//Used for reading all .wav files in a directory
+
 #ifndef DATAREAD_H
 #define DATAREAD_H
 
