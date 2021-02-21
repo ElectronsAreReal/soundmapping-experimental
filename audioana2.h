@@ -1,15 +1,14 @@
 /* Author: Robert Oetting, Mail: robo.oe [ at ] gmail.com
- * Audio-analysis class for generating static audio-data from raw audio. Not build for realtime-use, it needs adjustment for that.
- * There is absolutely no warranty that this software performs as expected. The author takes no responsibility for and financial or physical harm caused by this software.
- * Please note that the values of the spectrograms are not weighted properly. The logarithmic scaling is chosen for aesthetic appeal in last application of the class.
- * Developed for usage in soundmapping software.
- * It provides:
- * - Spectrograms (overlapping and different sizes possible) (uses kiss-fft - just powers of two)
+ * Audio-analysis class for generating static audio-data from raw audio. Not built for realtime-use.
+ * There is absolutely no warranty that this software performs as expected. The author takes no responsibility for any financial or physical harm caused by this software.
+ * Please note that the values of the spectrograms are not weighted properly. The logarithmic scaling is chosen for aesthetic appeal.
+ * This calss provides:
+ * - Spectrograms (overlapping and different sizes possible) (uses kiss-fft - just powers of two!)
  * - averaged spectrum over whole track
- * - time series (from averaged frequency bins for each spectrum)
+ * - time series
  * - function for retrieving average of custom intervals of the spectrogram (good for visualization purposes)
- * - implements experimental algorithms for calculiating the box-dimension of 2d and 1d data. Used for calculating fractal dimension of spectrograms.
- *   Mind that the box-count algorithms executin time depends strongly on the input-levels or the chosen multiplication factor. The execution time is also not proportional to the amount of data-points and depends on the data-values.
+ * - implements experimental algorithms for calculiating the box-dimension of 2d and 1d data. Used for calculating fractal dimension of spectrograms, time series and spectrums.
+ *   Mind that the box-count algorithms executing time depends strongly on the input-levels / the chosen multiplication factor. Low factors result in inaccurate indices, high ones result in unnecessary long execution time.
  */
 
 #include <stdio.h>
