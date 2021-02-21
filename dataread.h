@@ -1,4 +1,5 @@
 //Used for reading all .wav files in a directory
+//The file creation time is extracted from the filename. All files need to be renamed using a shell-script before they can be read by this class properly.
 
 #ifndef DATAREAD_H
 #define DATAREAD_H
