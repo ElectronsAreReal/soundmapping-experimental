@@ -1,1 +1,6 @@
-Thist code is part 
+This code was used to create the sound-maps for the masters-thesis "Methods in Audio-Cartograpy" at FH Vorarlberg (Austria) by Robert Oetting. 
+It only works on linux. For use on other plattforms, the dataread-class needs to be changed to work on other systems. 
+The code in ofApp is messy and redundant. It was created by constantly modifying and adding functions in order to explore the possibilities of sound-mapping.
+Because of this circular workflow, it was possible to explore a big range of different soundmapping- methods in relatively little time at the cost of usability.
+The classes for audio analysis and data-preperation are relatively clean and reusable.
+
